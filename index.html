@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balaji S- Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #53a55d, #fad0c4);
+      color: #444;
+    }
+
+    header {
+      background: #282c34; /* Dark gray header */
+      color: #ffffff;
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+    }
+
+    header::after {
+      /* content: ''; */
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 60px;
+      background: #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    header p {
+      margin: 10px 0;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    section {
+      margin: 40px auto;
+      padding: 40px;
+      max-width: 900px;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transform: scale(0.95);
+      opacity: 0;
+      animation: zoomIn 1s forwards ease-in-out;
+    }
+
+    section:nth-child(even) {
+      transform: rotate(1deg);
+      background: #f7f9fc;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #282c34;
+      border-bottom: 2px solid #f3f3f3;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+      padding: 15px;
+      background: #f1f1f1;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    ul li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #282c34;
+      color: #ffffff;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    a {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animations */
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(0.95);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Balaji S</h1>
+    <p>Software Developer | Technology Enthusiast</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m balaji, a tech enthusiast who loves to build efficient software solutions. I specialize in programming languages and enjoy solving complex problems.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C Programming</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>HTML & CSS</li>
+      <li>SQL</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Expense Tracker:</strong> A web app to track personal expenses using Python and SQL.</li>
+      <li><strong>E-commerce Website</strong> E-commerce Website using java</li>
+      <li><strong>Portfolio Website:</strong> A personal portfolio built with HTML, CSS, and JavaScript.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email:balajis@example.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/balaji-s-41bb39267/" target="_blank">linkedin.com/in/Balaji</a></p>
+    <p>GitHub: <a href="https://github.com/Balaji77898" target="_blank">github.com/Balaji</a></p>
+  </section>
+
+  <footer>
+    <p>© 2024 Balaji S</p>
+  </footer>
+</body>
+</html>
